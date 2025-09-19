@@ -1,0 +1,10 @@
+#reverse an array
+n = int(input("enter the size of array:"))
+n
+arr = []
+for i in range(n):
+    arr.append(int(input("enter the element:")))
+arr
+arr.reverse()
+print("array after reversing:",arr)
+    
