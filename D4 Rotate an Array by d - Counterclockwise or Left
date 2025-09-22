@@ -1,0 +1,14 @@
+#Move all Zeros to End of Array
+n = int(input("enter the size of array"))
+arr =[]
+for i in range (n):
+    arr.append(int(input("enter the element:")))
+print(arr)
+def pushzerotoend(arr):
+    posofnonzero = 0
+    for i in range(n):
+        if arr[i]!=0:
+            arr[i],arr[posofnonzero]=arr[posofnonzero],arr[i]
+            posofnonzero = posofnonzero+1
+pushzerotoend(arr)
+print(arr)
